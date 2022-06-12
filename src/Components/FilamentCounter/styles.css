@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+.background-counter {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Work Sans', sans-serif;
+}
+.screen-counter{
+    width: 37vw;
+    min-width: 400px;
+    height: 20vw;
+    min-height: 216.2px;
+    user-select: none;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.screen{
+    position: absolute;
+    width: 37vw;
+    /* left: calc(50% - 18.5vw); */
+    min-width: 400px;
+    height: 20vw;
+    min-height: 216.2px;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(146, 146, 146, 0.204);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(126, 126, 126, 0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+
+}
+.container-numbers {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left: -19px;
+}
+ul {
+    list-style: none;
+}
+li {
+    width: 0px;
+    height: 0px;
+    font-size: 20vw;
+    position: relative;
+    top: -.586em;
+    left: -.27em;
+}
+.active{
+    z-index: 1000;
+    color: rgb(210, 224, 79);
+    text-shadow: 0px 0px 31px rgba(239, 243, 221, 0.91), 0px 0px 31px rgba(208,236,69,0.91), 0px 0px 31px rgba(235, 214, 30, 0.774);
+}
+.buttons-count-filaments {
+    width: 230px;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 17%
+}
+.sum-res, .button-on {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(146, 146, 146, 0.204);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(126, 126, 126, 0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+}
+.button-on {
+    width: 45px;
+    justify-content: center;
+}
+.sum-res div {
+    text-align: center;
+    width: 48px;
+    color: white;
+    cursor: pointer;
+}
+.sum-res .middle {
+    border-left: 2px solid rgba(121, 121, 121, 0.74);
+    border-right: 2px solid rgba(121, 121, 121, 0.74);
+}
+
+.background-counter .changePage{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    right: 30px;
+    top: calc(50% - 25px);
+    transform: rotate(45deg) skew(30deg, 30deg);
+    border-top: 4px solid #cccccc;
+    border-right: 4px solid #cccccc;
+}
+.on {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(210, 224, 79);
+    box-shadow: 0px 0px 21px rgba(239, 243, 221, 0.91), 0px 0px 21px rgba(208,236,69,0.91), 0px 0px 21px rgba(235, 214, 30, 0.774);
+}
+.off {
+    
+    background-color: rgb(44, 44, 44);
+    box-shadow: none
+}
+.background-counter .home {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(146, 146, 146, 0.204);
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
+    border: 2px rgba(126, 126, 126, 0.4) solid;
+    border-bottom: 2px rgba(40,40,40,0.35) solid;
+    border-right: 2px rgba(40,40,40,0.35) solid;
+
+}
+.background-counter .home span {
+    animation-name: on-off;
+    animation-duration: 15s;
+    transition: all ease 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes on-off {
+    0% {
+        color: #ffff00;
+        text-shadow: 0px 0px 21px rgba(239, 243, 221, 0.91), 0px 0px 21px rgba(208,236,69,0.91), 0px 0px 21px rgba(235, 214, 30, 0.774);
+    }
+    13.9% {
+        color: #ffff00;
+        text-shadow: 0px 0px 21px rgba(239, 243, 221, 0.91), 0px 0px 21px rgba(208,236,69,0.91), 0px 0px 21px rgba(235, 214, 30, 0.774);
+    }
+    14% {
+        color: #2c2c2c;
+        text-shadow: none;
+    }
+    16.9% {
+        color: #2c2c2c;
+        text-shadow: none
+    }
+    17% {
+        color: #ffff00;
+        text-shadow: 0px 0px 21px rgba(239, 243, 221, 0.91), 0px 0px 21px rgba(208,236,69,0.91), 0px 0px 21px rgba(235, 214, 30, 0.774);
+    }
+    20.9% {
+        color: #ffff00;
+        text-shadow: 0px 0px 21px rgba(239, 243, 221, 0.91), 0px 0px 21px rgba(208,236,69,0.91), 0px 0px 21px rgba(235, 214, 30, 0.774);
+    }
+    21% {
+        color: #2c2c2c;
+        text-shadow: none
+    }
+    21.9% {
+        color: #2c2c2c;
+        text-shadow: none
+    }
+    22% {
+        color: #ffff00;
+        text-shadow: 0px 0px 21px rgba(239, 243, 221, 0.91), 0px 0px 21px rgba(208,236,69,0.91), 0px 0px 21px rgba(235, 214, 30, 0.774);
+    }
+    48.9% {
+        color: #ffff00;
+        text-shadow: 0px 0px 21px rgba(239, 243, 221, 0.91), 0px 0px 21px rgba(208,236,69,0.91), 0px 0px 21px rgba(235, 214, 30, 0.774);
+    }
+    49% {
+        color: #2c2c2c;
+        text-shadow: none
+    }
+    55.9% {
+        color: #2c2c2c;
+        text-shadow: none
+    }
+    56% {
+        color: #ffff00;
+        text-shadow: 0px 0px 21px rgba(239, 243, 221, 0.91), 0px 0px 21px rgba(208,236,69,0.91), 0px 0px 21px rgba(235, 214, 30, 0.774);
+    }
+    100% {
+        color: #ffff00;
+        text-shadow: 0px 0px 21px rgba(239, 243, 221, 0.91), 0px 0px 21px rgba(208,236,69,0.91), 0px 0px 21px rgba(235, 214, 30, 0.774);
+    }  
+}
+
+@media screen and (max-width: 1080px) {
+    li {
+        font-size: 210px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .screen-counter {
+        width: 70vw;
+        height: 37.83vw;
+    }
+    .screen {
+        width: 70vw;
+        height: 37.83vw;
+    }
+    li {
+        font-size: 37.83vw;
+    }
+    .sum-res {
+        width: 20vw;
+    }
+    .background-counter .changePage {
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        transform: rotate(45deg) skew(30deg, 30deg);
+    }
+}
+@media screen and (max-width: 700px) {
+    .sum-res {
+        width: 30vw;
+        font-size: 5vw;
+        bottom: 30%;
+    }
+    .background-counter .changePage {
+        /* width: 30px;
+        height: 30px; */
+        top: 20%;
+        right: 10px;
+        /* transform: rotate(45deg) skew(30deg, 30deg); */
+    }
+}

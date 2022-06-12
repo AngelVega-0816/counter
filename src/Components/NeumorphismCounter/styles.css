@@ -1,0 +1,208 @@
+.screen-neumorphism {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(207, 206, 206); */
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease;
+}
+.screen-neumorphism .contain {
+    width: 34vw;
+    height: 34vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background: #cfcece;
+    box-shadow: inset -10px 10px 20px #adadad,
+            inset 10px -10px 20px #ebebeb;
+    transition: all .2s ease;
+}
+.screen-neumorphism .contain h2 {
+     border-radius: 48px; 
+    font-size: 16vw;
+    color: #cccccc;
+    text-shadow: -2.5px 2.5px 5px #adadad,
+             2.5px -2.5px 5px #ebebeb;
+    user-select: none;
+    transition: all .2s ease;
+}
+.buttons {
+    margin-top: 35px;
+    width: 34vw;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button {
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    padding: 5px 0px;
+    font-size: 27px;
+
+    border-radius: 50px;
+    background: linear-gradient(145deg, #cfcece, #b8b8b8);
+    box-shadow:  -2.5px 2.5px 7.5px #adadad,
+             2.5px -2.5px 7.5px #ebebeb;    
+    transition: all .4s ease;
+}
+.buttons button:active {
+    background: linear-gradient(145deg, #b8b8b8, #cfcece);
+    box-shadow:  -2.5px 2.5px 7.5px #adadad,
+             2.5px -2.5px 7.5px #ebebeb;
+}
+.buttons .typed {
+    color: #dadada;
+    text-shadow: -1px 1px 2px #858585,
+             1px -1px 2px #e2e2e2;
+    user-select: none;
+
+}
+.dark-screen {
+    background-color: #3b3c45;
+}
+.screen-neumorphism .dark-contain{
+    background: #3b3c45;
+    box-shadow: inset -13px 13px 30px #313239,
+            inset 13px -13px 30px #454651;
+}
+.dark-screen .dark-contain h2 {
+    color: #3b3c45;
+    text-shadow: -2.5px 2.5px 5px #313239,
+             2.5px -2.5px 5px #454651;
+}
+.screen-neumorphism .buttons .dark {
+    color: #4c4d58;
+    background: linear-gradient(145deg, #3f404a, #35363e);
+    box-shadow:  -2.5px 2.5px 7.5px #313239,
+             2.5px -2.5px 7.5px #454651;
+    
+    text-shadow: -1px 1px 2px #313239,
+             1px -1px 2px #454651;
+}
+
+.screen-neumorphism .change {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+
+}
+.change span {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    
+}
+.change div {
+    display: none;
+    cursor: pointer;
+}
+.change div:nth-child(1){
+    display: block;
+    color: #dad8d8;
+    text-shadow: -2.5px 2.5px 5px #a1a1a1,
+             2.5px -2.5px 5px #d4d2d2;
+}
+.dark-screen .change div:nth-child(1) {
+    display: none;
+}
+.dark-screen .change div:nth-child(2) {
+    display: block;
+    color: #4c4d58;
+    text-shadow: -1px 1px 2px #313239,
+             1px -1px 2px #454651;
+}
+.screen-neumorphism .dark-mode {
+    background: linear-gradient(225deg, #b8b8b8, #dadada);
+    box-shadow:  -3px 3px 6px #a9a9a9,
+             3px -3px 6px #efefef;
+}
+
+.screen-neumorphism .light-mode{
+    background: linear-gradient(225deg, #35363e, #3f404a);
+    box-shadow:  -3px 3px 6px #313239,
+             3px -3px 6px #454651;
+}
+
+.screen-neumorphism .changePage{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    left: 30px;
+    top: calc(50% - 25px);
+    transform: rotate(45deg) skew(30deg, 30deg);
+    border-bottom: 4px solid #1a1a1a;
+    border-left: 4px solid #1a1a1a;
+}
+.screen-neumorphism .home {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #dad8d8;
+    text-shadow: -2.5px 2.5px 5px #a1a1a1, 2.5px -2.5px 5px #d4d2d2;
+}
+.screen-neumorphism .home span {
+    user-select: none;
+
+}
+.screen-neumorphism .home-dark {
+    color: #4c4d58;
+    text-shadow: -1px 1px 2px #313239,
+             1px -1px 2px #454651;
+}
+@media screen and (max-width: 600px) {
+
+    .screen-neumorphism .contain{
+        width: 350px;
+        height: 350px;
+    }
+    .screen-neumorphism .contain h2 {
+        
+        font-size: 150px;
+    }
+    
+    .screen-neumorphism .changePage {
+        width: 30px;
+        height: 30px;
+        left: 10px;
+        top: 20%;
+        transform: rotate(45deg) skew(30deg, 30deg);
+    }
+}
+@media screen and (max-width: 600px) {
+    .screen-neumorphism .buttons .typed {
+        width: 30px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .screen-neumorphism .contain{
+        width: 270px;
+        height: 270px;
+    }
+    .screen-neumorphism .contain h2 {
+        
+        font-size: 120px;
+    }
+}
